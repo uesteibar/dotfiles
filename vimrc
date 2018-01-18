@@ -39,6 +39,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'mxw/vim-jsx'
 Plugin 'elzr/vim-json'
+Plugin 'elixir-lang/vim-elixir'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
