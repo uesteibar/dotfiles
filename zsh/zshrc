@@ -1,0 +1,7 @@
+source ~/dotfiles/zsh/aliases
+source ~/dotfiles/zsh/path
+source ~/dotfiles/zsh/prompt
+source ~/dotfiles/zsh/environment
+source ~/dotfiles/zsh/user
+
+

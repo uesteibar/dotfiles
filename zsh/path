@@ -1,0 +1,6 @@
+PATH=/usr/bin:/bin:/usr/sbin:/sbin
+PATH=/usr/local/bin:/usr/local/sbin:"$PATH"
+PATH=/opt/local/bin:/opt/local/sbin:"$PATH"
+PATH=~/bin:"$PATH"
+
+export PATH
