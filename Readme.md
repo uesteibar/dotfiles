@@ -1,5 +1,15 @@
-## My vim config [WIP]
+# Dotfiles
 
-- It uses [Vundle](https://github.com/VundleVim/Vundle.vim) as plugin manager.
+## Setup
 
-- To install all plugins run `:PluginInstall`.
+Clone into your home directory
+```
+git clone https://github.com/uesteibar/dotfiles.git ~/
+
+cd ~/dotfiles 
+```
+
+Run the setup script
+```
+./setup.sh
+```
