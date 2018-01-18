@@ -35,8 +35,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ctrlpvim/ctrlp.vim'
 
-" Rails
+" Languages
 Plugin 'tpope/vim-rails'
+Plugin 'mxw/vim-jsx'
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -108,3 +110,5 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
+" Don't require jsx extension for react files
+let g:jsx_ext_required = 0
