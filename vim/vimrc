@@ -22,6 +22,7 @@ Plugin 'rakr/vim-one'
 " Syntax
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
+Plugin 'jiangmiao/auto-pairs'
 
 " Housekeeping
 Plugin 'ntpeters/vim-better-whitespace'
