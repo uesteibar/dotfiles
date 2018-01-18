@@ -38,6 +38,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " Languages
 Plugin 'tpope/vim-rails'
 Plugin 'mxw/vim-jsx'
+Plugin 'elzr/vim-json'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
