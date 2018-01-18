@@ -13,13 +13,30 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+
+" Layout
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'rakr/vim-one'
+
+" Syntax
 Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+
+" Housekeeping
 Plugin 'ntpeters/vim-better-whitespace'
+
+" Utils
+Plugin 'scrooloose/nerdcommenter'
+
+
+" Navigation
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'ctrlpvim/ctrlp.vim'
+
+" Rails
+Plugin 'tpope/vim-rails'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -34,7 +51,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+filetype plugin on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -62,18 +79,18 @@ set smartindent
 set autoindent
 
 " Syntastic statusline
- set statusline+=%#warningmsg#
- set statusline+=%{SyntasticStatuslineFlag()}
- set statusline+=%*
- " Sytnastic settings
- let g:syntastic_always_populate_loc_list = 1
- let g:syntastic_auto_loc_list = 1
- let g:syntastic_check_on_open = 1
- let g:syntastic_loc_list_height=5
- let g:syntastic_check_on_wq = 0
- " Better symbols
- let g:syntastic_error_symbol = 'XX'
- let g:syntastic_warning_symbol = '!!'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+" Sytnastic settings
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_loc_list_height=5
+let g:syntastic_check_on_wq = 0
+" Better symbols
+let g:syntastic_error_symbol = 'XX'
+let g:syntastic_warning_symbol = '!!'
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -81,3 +98,13 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 map <C-n> :NERDTreeToggle<CR>
 set hlsearch
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
