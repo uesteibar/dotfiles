@@ -1,9 +1,10 @@
+# System
 alias pr='ps -e | grep'
-
-alias rubyserver='ruby -run -e httpd . -p 5000'
+alias ll='ls -al'
 
 # Ruby
 alias be='bundle exec'
+alias rubyserver='ruby -run -e httpd . -p 5000'
 
 # Xing
 alias tunnel-to-production='ssh -N -L 8099:rest.api.ams1.xing.com:80 app-deploy@eqipia-1.preview.ams1.xing.com'
@@ -14,7 +15,8 @@ alias docker-clean='docker rmi $(docker images -a -q) --force'
 # Vim
 alias hackit='mvim .'
 
-alias ll='ls -al'
+
+# Git
 alias ga='git add'
 alias gc='git commit -m'
 alias gst='git status'
@@ -25,4 +27,5 @@ alias gpull='git pull'
 alias gout='git log --branches --not --remotes=origin'
 alias gbcopy="git branch | grep '^\*' | cut -d' ' -f2 | pbcopy"
 alias gsign-all="git rebase --exec 'git commit --amend --no-edit -n -S' -i"
+alias gd='git diff'
 
