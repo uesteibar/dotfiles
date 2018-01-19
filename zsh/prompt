@@ -1,5 +1,7 @@
 autoload -U promptinit; promptinit
 prompt pure
 
-bindkey '\e[A' history-beginning-search-backward
-bindkey '\e[B' history-beginning-search-forward
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
