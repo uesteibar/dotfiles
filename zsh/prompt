@@ -1,7 +1,19 @@
 autoload -U promptinit; promptinit
 prompt pure
 
+HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
+setopt autocd
+bindkey -e
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle :compinstall filename '/Users/unai.esteibar/.zshrc'
+
+autoload -Uz compinit
+compinit
+
