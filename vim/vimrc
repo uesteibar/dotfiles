@@ -39,6 +39,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'mhinz/vim-grepper'
 
 " Languages
 Plugin 'tpope/vim-rails'
