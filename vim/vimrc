@@ -46,6 +46,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'mxw/vim-jsx'
 Plugin 'elzr/vim-json'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'slashmili/alchemist.vim'
 Plugin 'ekalinin/dockerfile.vim'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -122,4 +123,9 @@ let g:NERDTrimTrailingWhitespace = 1
 " Don't require jsx extension for react files
 let g:jsx_ext_required = 0
 
+" Alchemist mappings
+let g:alchemist_tag_map = '<C-]>'
+let g:alchemist_tag_stack_map = '<C-[>'
+
 nnoremap <leader>g :Grepper -tool git<cr>
+
