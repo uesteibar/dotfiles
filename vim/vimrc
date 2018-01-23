@@ -119,6 +119,8 @@ let g:NERDCompactSexyComs = 1
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+" Make hidden files visible in NERDTree
+let NERDTreeShowHidden=1
 
 " Don't require jsx extension for react files
 let g:jsx_ext_required = 0
