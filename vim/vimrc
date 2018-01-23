@@ -131,3 +131,6 @@ let g:alchemist_tag_stack_map = '<C-[>'
 
 nnoremap <leader>g :Grepper -tool git<cr>
 
+" Panes
+set splitbelow
+set splitright
