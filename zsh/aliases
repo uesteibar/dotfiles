@@ -15,6 +15,8 @@ alias tunnel-to-production='ssh -N -L 8099:rest.api.ams1.xing.com:80 app-deploy@
 
 # Docker
 alias docker-clean='docker rmi $(docker images -a -q) --force'
+alias docker-containers-clean='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
+alias docker-clean-all='docker-clean && docker-containers-clean'
 
 # Vim
 alias hackit='mvim .'
