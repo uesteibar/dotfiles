@@ -33,6 +33,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 
 " Utils
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-repeat'
 
 
 " Navigation
