@@ -132,9 +132,6 @@ let g:alchemist_tag_stack_map = '<C-[>'
 
 nnoremap <leader>g :Grepper -tool git<cr>
 
-" Show relative numbers
-set relativenumber
-
 " Panes
 set splitbelow
 set splitright
