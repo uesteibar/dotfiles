@@ -1,6 +1,10 @@
 # System
 alias pr='ps -e | grep'
 alias ll='ls -al'
+take () {
+  mkdir -p -- "$1" &&
+  cd -P -- "$1"
+}
 
 # Ruby
 alias be='bundle exec'
