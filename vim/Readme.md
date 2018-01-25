@@ -27,5 +27,6 @@
 * [elixir-lang/vim-elixir](https://github.com/elixir-lang/vim-elixir)
 * [slashmili/alchemist.vim](https://github.com/slashmili/alchemist.vim)
 * [ekalinin/dockerfile.vim](https://github.com/ekalinin/dockerfile.vim)
+* [kchmck/vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
 * [git://git.wincent.com/command-t.git](https://git.wincent.com/command-t.git)
 * [rstacruz/sparkup](https://github.com/rstacruz/sparkup)
