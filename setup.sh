@@ -23,6 +23,9 @@ rm ~/dotfiles/zsh/environment.sample
 cp ~/dotfiles/zsh/user.sample ~/dotfiles/zsh/user
 rm ~/dotfiles/zsh/user.sample
 
+echo "-> configuring git"
+git config --global core.excludesfile '~/dotfiles/zsh/gitignore'
+
 echo "-> Installing pure-prompt"
 npm install --global pure-prompt
 
