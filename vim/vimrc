@@ -36,12 +36,12 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-repeat'
 Plugin 'vim-scripts/copypath.vim'
 
-
 " Navigation
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mhinz/vim-grepper'
+Plugin 'terryma/vim-multiple-cursors'
 
 " Languages
 Plugin 'tpope/vim-rails'
@@ -134,6 +134,9 @@ let g:alchemist_tag_stack_map = '<C-[>'
 
 " Use CtrlPMRU by default on ctrl-p
 let g:ctrlp_cmd = 'CtrlPMRU'
+
+" Multiple cursors with ctrl-d
+let g:multi_cursor_next_key='<C-d>'
 
 nnoremap <leader>g :Grepper -tool git<cr>
 
