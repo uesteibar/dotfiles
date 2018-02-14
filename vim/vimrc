@@ -132,9 +132,6 @@ let g:jsx_ext_required = 0
 let g:alchemist_tag_map = '<C-]>'
 let g:alchemist_tag_stack_map = '<C-[>'
 
-" Use CtrlPMRU by default on ctrl-p
-let g:ctrlp_cmd = 'CtrlPMixed'
-
 " Multiple cursors with ctrl-d
 let g:multi_cursor_next_key='<C-d>'
 
