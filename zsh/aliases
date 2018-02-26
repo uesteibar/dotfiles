@@ -43,4 +43,4 @@ alias gout='git log --branches --not --remotes=origin'
 alias gbcopy="git branch | grep '^\*' | cut -d' ' -f2 | pbcopy"
 alias gsign-all="git rebase --exec 'git commit --amend --no-edit -n -S' -i"
 alias gd='git diff'
-
+alias gh='diff2html -- -M'

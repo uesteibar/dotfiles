@@ -29,4 +29,7 @@ git config --global core.excludesfile '~/dotfiles/zsh/gitignore'
 echo "-> Installing pure-prompt"
 npm install --global pure-prompt
 
+echo "-> Installing diff2html"
+npm install --global diff2html-cli
+
 echo "Done!"
