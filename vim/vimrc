@@ -39,7 +39,7 @@ Plugin 'vim-scripts/copypath.vim'
 " Navigation
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'yggdroot/leaderf'
 Plugin 'mhinz/vim-grepper'
 Plugin 'terryma/vim-multiple-cursors'
 
@@ -113,6 +113,8 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 map <C-n> :NERDTreeToggle<CR>
 set hlsearch
+
+map <C-p> :LeaderfFile<CR>
 
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
