@@ -31,3 +31,5 @@
 * [git://git.wincent.com/command-t.git](https://git.wincent.com/command-t.git)
 * [rstacruz/sparkup](https://github.com/rstacruz/sparkup)
 * [terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+* [SirVer/ultisnips](https://github.com/SirVer/ultisnips)
+* [honza/vim-snippets](https://github.com/honza/vim-snippets)

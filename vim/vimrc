@@ -52,6 +52,10 @@ Plugin 'slashmili/alchemist.vim'
 Plugin 'ekalinin/dockerfile.vim'
 Plugin 'kchmck/vim-coffee-script'
 
+" snippets
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -138,6 +142,11 @@ let g:alchemist_tag_stack_map = '<C-[>'
 let g:multi_cursor_next_key='<C-d>'
 
 nnoremap <leader>g :Grepper -tool git<cr>
+
+" snippets
+let g:UltiSnipsExpandTrigger="<C-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Panes
 set splitbelow
