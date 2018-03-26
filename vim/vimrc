@@ -52,6 +52,9 @@ Plugin 'slashmili/alchemist.vim'
 Plugin 'ekalinin/dockerfile.vim'
 Plugin 'kchmck/vim-coffee-script'
 
+" Formatters
+Plugin 'mhinz/vim-mix-format'
+
 " snippets
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
@@ -140,6 +143,9 @@ let g:alchemist_tag_stack_map = '<C-[>'
 
 " Multiple cursors with ctrl-d
 let g:multi_cursor_next_key='<C-d>'
+
+" Format elixir files on save
+let g:mix_format_on_save = 1
 
 nnoremap <leader>g :Grepper -tool git<cr>
 
