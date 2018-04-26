@@ -34,3 +34,4 @@
 * [SirVer/ultisnips](https://github.com/SirVer/ultisnips)
 * [honza/vim-snippets](https://github.com/honza/vim-snippets)
 * [mhinz/vim-mix-format](https://github.com/mhinz/vim-mix-format)
+* [lnl7/vim-nix](https://github.com/lnl7/vim-nix)

@@ -51,6 +51,7 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'ekalinin/dockerfile.vim'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'lnl7/vim-nix'
 
 " Formatters
 Plugin 'mhinz/vim-mix-format'
