@@ -22,7 +22,6 @@
 * [yggdroot/leaderf](https://github.com/yggdroot/leaderf.vim)
 * [mhinz/vim-grepper](https://github.com/mhinz/vim-grepper)
 * [tpope/vim-rails](https://github.com/tpope/vim-rails)
-* [mxw/vim-jsx](https://github.com/mxw/vim-jsx)
 * [elzr/vim-json](https://github.com/elzr/vim-json)
 * [elixir-lang/vim-elixir](https://github.com/elixir-lang/vim-elixir)
 * [slashmili/alchemist.vim](https://github.com/slashmili/alchemist.vim)
@@ -35,3 +34,4 @@
 * [honza/vim-snippets](https://github.com/honza/vim-snippets)
 * [mhinz/vim-mix-format](https://github.com/mhinz/vim-mix-format)
 * [lnl7/vim-nix](https://github.com/lnl7/vim-nix)
+* [mxw/vim-javascript](https://github.com/pangloss/vim-javascript)
