@@ -3,6 +3,7 @@
 echo "-> Linking vim config files"
 ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 ln -s ~/dotfiles/vim ~/.vim
+ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 echo "-> Installing Vundle"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/dotfiles/vim/bundle/Vundle.vim
@@ -31,5 +32,9 @@ npm install --global pure-prompt
 
 echo "-> Installing diff2html"
 npm install --global diff2html-cli
+
+echo "-> installing tmux"
+brew install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo "Done!"

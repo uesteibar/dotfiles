@@ -20,3 +20,4 @@ Run the setup script
 
 * [Vim config](https://github.com/uesteibar/dotfiles/tree/master/vim)
 * [ZSH config](https://github.com/uesteibar/dotfiles/tree/master/zsh)
+* [Tmux config](https://github.com/uesteibar/dotfiles/tree/master/tmux)
