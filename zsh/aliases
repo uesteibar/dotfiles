@@ -44,3 +44,4 @@ alias gbcopy="git branch | grep '^\*' | cut -d' ' -f2 | pbcopy"
 alias gsign-all="git rebase --exec 'git commit --amend --no-edit -n -S' -i"
 alias gd='git diff'
 alias gh='diff2html -- -M'
+alias git-clean-branches='git branch | grep -v "master" | xargs git branch -D'
