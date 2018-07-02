@@ -3,6 +3,7 @@
 echo "-> Linking vim config files"
 ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 ln -s ~/dotfiles/vim ~/.vim
+ln -s ~/dotfiles/vim/init.vim ~/.config/nvim/init.vim
 ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 echo "-> Installing Vundle"
@@ -35,6 +36,7 @@ npm install --global diff2html-cli
 
 echo "-> installing tmux"
 brew install tmux
+brew install tmate
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo "Done!"
