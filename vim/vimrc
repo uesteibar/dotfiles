@@ -100,6 +100,8 @@ set shiftwidth=2
 set expandtab
 set smartindent
 set autoindent
+set mouse=v
+set clipboard=unnamed
 
 " Syntastic statusline
 set statusline+=%#warningmsg#
