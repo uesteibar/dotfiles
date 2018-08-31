@@ -26,6 +26,8 @@ cp ~/dotfiles/zsh/user.sample ~/dotfiles/zsh/user
 rm ~/dotfiles/zsh/user.sample
 
 echo "-> configuring git"
+ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
+ln -s ~/dotfiles/git/gitignore ~/.gitignore
 git config --global core.excludesfile '~/dotfiles/zsh/gitignore'
 
 echo "-> Installing pure-prompt"

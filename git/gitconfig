@@ -1,0 +1,18 @@
+[user]
+	name = uesteibar
+	email = uesteibar@gmail.com
+	signingkey = 7259EF8533CB6FF0
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[push]
+	default = matching
+	followTags = true
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = ~/dotfiles/zsh/gitignore
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
