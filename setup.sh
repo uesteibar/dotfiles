@@ -39,4 +39,11 @@ brew install tmux
 brew install tmate
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-echo "Done!"
+echo "-> installing gpg"
+brew install gpg
+
+echo "Get your gpg private and public keys back and run"
+echo "  gpg --import private.key"
+echo "And then configure git to use your pgp key https://help.github.com/articles/telling-git-about-your-gpg-key/"
+
+echo "\nDone!"
