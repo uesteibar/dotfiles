@@ -33,6 +33,9 @@ git config --global core.excludesfile '~/dotfiles/zsh/gitignore'
 echo "-> Installing Brew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+echo "-> Installing zsh"
+brew install zsh
+
 echo "-> Installing Node"
 brew install node
 
