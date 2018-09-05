@@ -30,6 +30,12 @@ ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/git/gitignore ~/.gitignore
 git config --global core.excludesfile '~/dotfiles/zsh/gitignore'
 
+echo "-> Installing Brew"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo "-> Installing Node"
+brew install node
+
 echo "-> Installing pure-prompt"
 npm install --global pure-prompt
 
