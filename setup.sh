@@ -21,9 +21,8 @@ cd ../../..
 echo "-> Linking zsh config files"
 ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
 cp ~/dotfiles/zsh/environment.sample ~/dotfiles/zsh/environment
-rm ~/dotfiles/zsh/environment.sample
 cp ~/dotfiles/zsh/user.sample ~/dotfiles/zsh/user
-rm ~/dotfiles/zsh/user.sample
+cp ~/dotfiles/zsh/ssh.sample ~/dotfiles/zsh/ssh
 
 echo "-> configuring git"
 ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
