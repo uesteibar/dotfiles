@@ -20,6 +20,7 @@ alias docker-clean-all='docker-clean && docker-containers-clean'
 
 # Vim
 alias hackit='mvim .'
+alias vim='mvim -v'
 
 # Atom
 function atomize() {
