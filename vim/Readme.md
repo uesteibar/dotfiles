@@ -22,7 +22,7 @@
 * [yggdroot/leaderf](https://github.com/yggdroot/leaderf.vim)
 * [mhinz/vim-grepper](https://github.com/mhinz/vim-grepper)
 * [tpope/vim-rails](https://github.com/tpope/vim-rails)
-* [elzr/vim-json](https://github.com/elzr/vim-json)
+* [brooth/far.vim](https://github.com/brooth/far.vim)
 * [elixir-lang/vim-elixir](https://github.com/elixir-lang/vim-elixir)
 * [slashmili/alchemist.vim](https://github.com/slashmili/alchemist.vim)
 * [ekalinin/dockerfile.vim](https://github.com/ekalinin/dockerfile.vim)

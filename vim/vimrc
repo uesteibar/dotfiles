@@ -42,11 +42,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'yggdroot/leaderf'
 Plugin 'mhinz/vim-grepper'
+Plugin 'brooth/far.vim'
 Plugin 'terryma/vim-multiple-cursors'
 
 " Languages
 Plugin 'tpope/vim-rails'
-Plugin 'elzr/vim-json'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'ekalinin/dockerfile.vim'
