@@ -28,6 +28,7 @@ Plugin 'w0rp/ale'
 Plugin 'tpope/vim-endwise'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'pangloss/vim-javascript'
+Plugin 'posva/vim-vue'
 
 " Housekeeping
 Plugin 'ntpeters/vim-better-whitespace'
