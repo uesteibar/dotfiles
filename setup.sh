@@ -38,6 +38,10 @@ brew install zsh
 echo "-> Installing Node"
 brew install node
 
+echo "-> Installing fzf"
+brew install fzf
+$(brew --prefix)/opt/fzf/install
+
 echo "-> Installing pure-prompt"
 npm install --global pure-prompt
 
