@@ -32,14 +32,10 @@ git config --global core.excludesfile '~/dotfiles/zsh/gitignore'
 echo "-> Installing Brew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-echo "-> Installing zsh"
-brew install zsh
+echo "-> Installing brew libraries"
+brew bundle
 
-echo "-> Installing Node"
-brew install node
-
-echo "-> Installing fzf"
-brew install fzf
+echo "-> Configuring fzf"
 $(brew --prefix)/opt/fzf/install
 
 echo "-> Installing pure-prompt"
@@ -47,11 +43,6 @@ npm install --global pure-prompt
 
 echo "-> Installing diff2html"
 npm install --global diff2html-cli
-
-echo "-> installing tmux"
-brew install tmux
-brew install tmate
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo "-> installing gpg"
 brew install gpg
