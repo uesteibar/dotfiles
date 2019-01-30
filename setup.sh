@@ -41,6 +41,32 @@ $(brew --prefix)/opt/fzf/install
 echo "-> Installing pure-prompt"
 npm install --global pure-prompt
 
+echo "-> Installing asdf"
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+cd ~/.asdf
+git checkout "$(git describe --abbrev=0 --tags)"
+cd -
+
+echo "-> installing ruby"
+asdf plugin-add ruby
+asdf install ruby 2.6
+asdf global ruby 2.6
+
+echo "-> installing erlang"
+asdf plugin-add erlang
+asdf install erlang 21.1
+asdf global erlang 21.1
+
+echo "-> installing elixir"
+asdf plugin-add elixir
+asdf install elixir 1.8
+asdf global elixir 1.8
+
+echo "-> installing node.js"
+asdf plugin-add nodejs
+asdf install nodejs 11.8.0
+asdf local nodejs 11.8.0
+
 echo "-> Installing diff2html"
 npm install --global diff2html-cli
 
