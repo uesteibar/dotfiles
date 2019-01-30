@@ -47,6 +47,13 @@ cd ~/.asdf
 git checkout "$(git describe --abbrev=0 --tags)"
 cd -
 
+source ~/.zshrc
+
+echo "-> installing java"
+asdf plugin-add java
+asdf install java openjdk-11.0.1
+asdf global java openjdk-11.0.1
+
 echo "-> installing ruby"
 asdf plugin-add ruby
 asdf install ruby 2.6
@@ -64,8 +71,9 @@ asdf global elixir 1.8
 
 echo "-> installing node.js"
 asdf plugin-add nodejs
+bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf install nodejs 11.8.0
-asdf local nodejs 11.8.0
+asdf global nodejs 11.8.0
 
 echo "-> Installing diff2html"
 npm install --global diff2html-cli
