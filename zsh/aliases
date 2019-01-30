@@ -10,9 +10,6 @@ take () {
 alias be='bundle exec'
 alias rubyserver='ruby -run -e httpd . -p 5000'
 
-# Xing
-alias tunnel-to-production='ssh -N -L 8099:rest.api.ams1.xing.com:80 app-deploy@eqipia-1.preview.ams1.xing.com'
-
 # Docker
 alias docker-clean='docker rmi $(docker images -a -q) --force'
 alias docker-containers-clean='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'

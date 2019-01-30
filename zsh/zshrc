@@ -5,8 +5,5 @@ source ~/dotfiles/zsh/environment
 source ~/dotfiles/zsh/user
 source ~/dotfiles/zsh/ssh
 source ~/dotfiles/zsh/fzf
-
 source ~/dotfiles/zsh/asdf
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
