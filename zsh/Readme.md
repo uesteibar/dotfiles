@@ -1,6 +1,6 @@
 ## My ZSH config
 
-* It uses [pure-promt](https://github.com/sindresorhus/pure).
+* It uses [spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt).
 * It uses [asdf](https://asdf-vm.github.io/asdf/#/) as runtime manager.
 * Place your environmental variables in the `environment` file.
 * Place your custom stuff in the `user` file.

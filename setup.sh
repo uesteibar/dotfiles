@@ -38,8 +38,8 @@ brew bundle
 echo "-> Configuring fzf"
 $(brew --prefix)/opt/fzf/install
 
-echo "-> Installing pure-prompt"
-npm install --global pure-prompt
+echo "-> Installing spaceshipt prompt"
+npm install -g spaceship-prompt
 
 echo "-> Installing asdf"
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
