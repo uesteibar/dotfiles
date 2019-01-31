@@ -106,6 +106,8 @@ set autoindent
 set mouse=v
 set clipboard=unnamed
 
+autocmd Filetype go setlocal ts=4 sw=4 sts=0 noexpandtab
+
 " Syntastic statusline
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
