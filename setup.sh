@@ -75,6 +75,11 @@ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf install nodejs 11.8.0
 asdf global nodejs 11.8.0
 
+echo "-> installing golang"
+asdf plugin-add golang
+asdf install golang 1.11
+asdf global golang 1.11
+
 echo "-> Installing diff2html"
 npm install --global diff2html-cli
 
