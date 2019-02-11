@@ -37,5 +37,6 @@
 * [SirVer/ultisnips](https://github.com/SirVer/ultisnips)
 * [honza/vim-snippets](https://github.com/honza/vim-snippets)
 * [mhinz/vim-mix-format](https://github.com/mhinz/vim-mix-format)
+* [ngmy/vim-rubocop](https://github.com/ngmy/vim-rubocop)
 * [lnl7/vim-nix](https://github.com/lnl7/vim-nix)
 * [mxw/vim-javascript](https://github.com/pangloss/vim-javascript)

@@ -58,6 +58,7 @@ Plugin 'fatih/vim-go'
 
 " Formatters
 Plugin 'mhinz/vim-mix-format'
+Plugin 'ngmy/vim-rubocop'
 
 " snippets
 Plugin 'SirVer/ultisnips'
@@ -148,9 +149,6 @@ let g:alchemist_tag_stack_map = '<C-[>'
 
 " Multiple cursors with ctrl-d
 let g:multi_cursor_next_key='<C-d>'
-
-" Format elixir files on save
-let g:mix_format_on_save = 1
 
 nnoremap <leader>g :Grepper -tool git<cr>
 
