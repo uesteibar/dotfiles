@@ -55,6 +55,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'posva/vim-vue'
 Plugin 'fatih/vim-go'
+Plugin 'peitalin/vim-jsx-typescript'
 
 " Formatters
 Plugin 'mhinz/vim-mix-format'
