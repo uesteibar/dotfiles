@@ -18,7 +18,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Layout
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
-Plugin 'rakr/vim-one'
+Plugin 'arcticicestudio/nord-vim'
 
 " Syntax
 Plugin 'scrooloose/syntastic'
@@ -92,10 +92,14 @@ filetype plugin on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-let g:airline_theme='one'
 syntax on
-colorscheme one
-set background=light
+set background=dark
+colorscheme nord
+let g:airline_theme = 'nord'
+let g:nord_italic = 1
+let g:nord_underline = 1
+let g:nord_italic_comments = 1
+let g:nord_comment_brightness = 15
 set colorcolumn=80
 set number
 filetype indent on
@@ -107,6 +111,10 @@ set smartindent
 set autoindent
 set mouse=v
 set clipboard=unnamed
+
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 autocmd Filetype go setlocal ts=4 sw=4 sts=0 noexpandtab
 
