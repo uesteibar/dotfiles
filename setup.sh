@@ -3,6 +3,8 @@
 echo "-> Linking vim config files"
 ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 ln -s ~/dotfiles/vim ~/.vim
+mkdir ~/.config
+mkdir ~/.config/nvim
 ln -s ~/dotfiles/vim/init.vim ~/.config/nvim/init.vim
 ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
@@ -79,6 +81,14 @@ echo "-> installing golang"
 asdf plugin-add golang
 asdf install golang 1.11
 asdf global golang 1.11
+
+echo "-> installing python"
+asdf plugin-add python
+asdf install python pypy3.6-7.0.0
+asdf global python pypy3.6-7.0.0
+
+echo "-> Setting up neovim"
+pip install --user neovim
 
 echo "-> Installing diff2html"
 npm install --global diff2html-cli
