@@ -16,8 +16,7 @@ alias docker-containers-clean='docker stop $(docker ps -a -q) && docker rm $(doc
 alias docker-clean-all='docker-clean && docker-containers-clean'
 
 # Vim
-alias hackit='mvim .'
-alias vim='mvim -v'
+alias hackit='nvim .'
 
 # Atom
 function atomize() {
