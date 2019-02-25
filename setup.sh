@@ -14,12 +14,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/dotfiles/vim/bundle/Vund
 echo "-> Installing Plugins"
 vim +PluginInstall +qall
 
-echo "-> Installing YouCompleteMe"
-cd vim/bundle/YouCompleteMe
-git submodule update --init --recursive
-./install.py
-cd ../../..
-
 echo "-> Linking zsh config files"
 ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
 cp ~/dotfiles/zsh/environment.sample ~/dotfiles/zsh/environment
