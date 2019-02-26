@@ -86,7 +86,7 @@ Plugin 'vim-scripts/copypath.vim'
 " Navigation
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'yggdroot/leaderf'
+Plugin 'yggdroot/leaderf', { 'do': './install.sh' }
 Plugin 'mhinz/vim-grepper'
 Plugin 'brooth/far.vim'
 Plugin 'terryma/vim-multiple-cursors'
