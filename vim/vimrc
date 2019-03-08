@@ -104,6 +104,7 @@ Plugin 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plugin 'posva/vim-vue'
 Plugin 'fatih/vim-go'
 Plugin 'peitalin/vim-jsx-typescript'
+Plugin 'findango/vim-mdx'
 
 " Formatters
 Plugin 'mhinz/vim-mix-format'
