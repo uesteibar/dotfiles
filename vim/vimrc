@@ -105,6 +105,7 @@ Plugin 'posva/vim-vue'
 Plugin 'fatih/vim-go'
 Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'findango/vim-mdx'
+Plugin 'derekwyatt/vim-scala'
 
 " Formatters
 Plugin 'mhinz/vim-mix-format'
