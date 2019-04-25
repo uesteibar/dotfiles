@@ -4,30 +4,30 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/dotfiles/vim/bundle/Vundle.vim
 let g:ale_emit_conflict_warnings = 0
-call vundle#begin()
+call plug#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+Plug 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
 " Layout
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'arcticicestudio/nord-vim'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'arcticicestudio/nord-vim'
 
 " Syntax
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-surround'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'w0rp/ale'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
+Plug 'w0rp/ale'
 
-Plugin 'ncm2/ncm2'
-Plugin 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
 " enable ncm2 for all buffers
 autocmd BufEnter * call ncm2#enable_for_buffer()
 
@@ -36,11 +36,11 @@ set completeopt=noinsert,menuone,noselect
 
 " NOTE: you need to install completion sources to get completions. Check
 " our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
-Plugin 'ncm2/ncm2-bufword'
-Plugin 'ncm2/ncm2-path'
-Plugin 'ncm2/ncm2-go'
-Plugin 'ncm2/ncm2-tern',  {'do': 'npm install'}
-Plugin 'pbogut/ncm2-alchemist'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-go'
+Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
+Plug 'pbogut/ncm2-alchemist'
 
 " suppress the annoying 'match x of y', 'The only match' and 'Pattern not
 " found' messages
@@ -76,55 +76,55 @@ au User Ncm2Plugin call ncm2#register_source({
         \ })
 
 " Housekeeping
-Plugin 'ntpeters/vim-better-whitespace'
+Plug 'ntpeters/vim-better-whitespace'
 
 " Utils
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-repeat'
-Plugin 'vim-scripts/copypath.vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-repeat'
+Plug 'vim-scripts/copypath.vim'
 
 " Navigation
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'yggdroot/leaderf', { 'do': './install.sh' }
-Plugin 'mhinz/vim-grepper'
-Plugin 'brooth/far.vim'
-Plugin 'terryma/vim-multiple-cursors'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'yggdroot/leaderf', { 'do': './install.sh' }
+Plug 'mhinz/vim-grepper'
+Plug 'brooth/far.vim'
+Plug 'terryma/vim-multiple-cursors'
 
 " Languages
-Plugin 'tpope/vim-rails'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'slashmili/alchemist.vim'
-Plugin 'ekalinin/dockerfile.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'lnl7/vim-nix'
-Plugin 'pangloss/vim-javascript'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'mhartington/nvim-typescript', {'do': './install.sh'}
-Plugin 'posva/vim-vue'
-Plugin 'fatih/vim-go'
-Plugin 'peitalin/vim-jsx-typescript'
-Plugin 'findango/vim-mdx'
-Plugin 'derekwyatt/vim-scala'
+Plug 'tpope/vim-rails'
+Plug 'elixir-lang/vim-elixir'
+Plug 'slashmili/alchemist.vim'
+Plug 'ekalinin/dockerfile.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'lnl7/vim-nix'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'posva/vim-vue'
+Plug 'fatih/vim-go'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'findango/vim-mdx'
+Plug 'derekwyatt/vim-scala'
 
 " Formatters
-Plugin 'mhinz/vim-mix-format'
-Plugin 'ngmy/vim-rubocop'
+Plug 'mhinz/vim-mix-format'
+Plug 'ngmy/vim-rubocop'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+Plug 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+call plug#end()            " required
 filetype plugin on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -145,7 +145,6 @@ let g:airline_theme = 'nord'
 let g:nord_italic = 1
 let g:nord_underline = 1
 let g:nord_italic_comments = 1
-let g:nord_comment_brightness = 20
 set colorcolumn=80
 set number
 filetype indent on

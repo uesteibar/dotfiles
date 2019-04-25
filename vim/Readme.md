@@ -1,6 +1,6 @@
 ## My vim config
 
-* It uses [Vundle](https://github.com/VundleVim/Vundle.vim) as plugin manager.
+* It uses [vim-plug](https://github.com/junegunn/vim-plug) as plugin manager.
 
 ### Included plugins
 

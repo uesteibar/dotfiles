@@ -8,8 +8,9 @@ mkdir ~/.config/nvim
 ln -s ~/dotfiles/vim/init.vim ~/.config/nvim/init.vim
 ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
-echo "-> Installing Vundle"
-git clone https://github.com/VundleVim/Vundle.vim.git ~/dotfiles/vim/bundle/Vundle.vim
+echo "-> Installing vim-plug"
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 echo "-> Installing Plugins"
 vim +PluginInstall +qall
