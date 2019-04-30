@@ -75,7 +75,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'posva/vim-vue'
 Plug 'fatih/vim-go'
-Plug 'peitalin/vim-jsx-typescript'
+Plug 'chemzqm/vim-jsx-improve'
 Plug 'findango/vim-mdx'
 Plug 'derekwyatt/vim-scala'
 

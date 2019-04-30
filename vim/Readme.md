@@ -39,4 +39,4 @@
 * [ngmy/vim-rubocop](https://github.com/ngmy/vim-rubocop)
 * [lnl7/vim-nix](https://github.com/lnl7/vim-nix)
 * [mxw/vim-javascript](https://github.com/pangloss/vim-javascript)
-* [peitalin/vim-jsx-typescript](https://github.com/peitalin/vim-jsx-typescript)
+* [neoclide/vim-jsx-improve](https://github.com/neoclide/vim-jsx-improve)
