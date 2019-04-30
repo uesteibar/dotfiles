@@ -12,7 +12,7 @@
 * [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * [w0rp/ale](https://github.com/w0rp/ale)
 * [pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
-* [ncm2/ncm2](https://github.com/ncm2/ncm2)
+* [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim)
 * [leafgarland/typescript-vim](https://github.com/leafgarland/typescript-vim)
 * [posva/vim-vue](https://github.com/posva/vim-vue)
 * [ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)

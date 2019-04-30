@@ -1,0 +1,13 @@
+{
+  "languageserver": {
+     "elixirLS": {
+      "command": "~/dotfiles/vim/ls/elixir-ls/language_server.sh",
+      "filetypes": ["elixir", "eelixir"]
+     },
+		"golang": {
+			"command": "gopls",
+			"rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+			"filetypes": ["go"]
+		}
+  }
+}

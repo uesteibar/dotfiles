@@ -85,6 +85,22 @@ asdf global python pypy3.6-7.0.0
 echo "-> Setting up neovim"
 pip install --user neovim
 
+echo "-> installing language servers"
+ln -s ~/dotfiles/vim/coc-settings.json ~/.config/nvim/coc-settings.json
+
+mkdir ~/dotfiles/vim/ls
+curl -s https://api.github.com/repos/JakeBecker/elixir-ls/releases/latest \
+  | grep "elixir-ls.zip" \
+  | cut -d : -f 2,3 \
+  | tr -d \" \
+  | wget -qi -
+unzip elixir-ls.zip -d ~/dotfiles/vim/ls/elixir-ls
+rm elixir-ls.zip
+
+go get -u golang.org/x/tools/cmd/gopls
+
+gem install solargraph
+
 echo "-> Installing diff2html"
 npm install --global diff2html-cli
 
