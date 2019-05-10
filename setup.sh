@@ -105,6 +105,7 @@ echo "-> Installing diff2html"
 npm install --global diff2html-cli
 
 echo "-> Installing tldr"
+mkdir -p ~/bin
 curl -o ~/bin/tldr https://raw.githubusercontent.com/raylee/tldr/master/tldr
 chmod +x ~/bin/tldr
 
