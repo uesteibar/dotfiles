@@ -76,11 +76,10 @@ Plug 'ekalinin/dockerfile.vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'lnl7/vim-nix'
 Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'posva/vim-vue'
 Plug 'fatih/vim-go'
 Plug 'chemzqm/vim-jsx-improve'
+Plug 'leafgarland/typescript-vim'
 Plug 'findango/vim-mdx'
 Plug 'derekwyatt/vim-scala'
 
