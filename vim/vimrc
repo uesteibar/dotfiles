@@ -82,6 +82,7 @@ Plug 'chemzqm/vim-jsx-improve'
 Plug 'leafgarland/typescript-vim'
 Plug 'findango/vim-mdx'
 Plug 'derekwyatt/vim-scala'
+Plug 'towolf/vim-helm'
 
 " Formatters
 Plug 'mhinz/vim-mix-format'
