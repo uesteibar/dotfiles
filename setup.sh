@@ -95,6 +95,7 @@ curl -s https://api.github.com/repos/JakeBecker/elixir-ls/releases/latest \
   | tr -d \" \
   | wget -qi -
 unzip elixir-ls.zip -d ~/dotfiles/vim/ls/elixir-ls
+chmod 755 ~/dotfiles/vim/ls/elixir-ls/language_server.sh
 rm elixir-ls.zip
 
 go get -u golang.org/x/tools/cmd/gopls
