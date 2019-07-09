@@ -35,6 +35,7 @@ Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-solargraph', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-vetur', {'do': 'yarn install --frozen-lockfile'}
 
 " suppress the annoying 'match x of y', 'The only match' and 'Pattern not
 " found' messages
