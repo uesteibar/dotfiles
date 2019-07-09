@@ -76,6 +76,12 @@ asdf install python pypy3.6-7.0.0
 asdf global python pypy3.6-7.0.0
 
 echo "-> Setting up neovim"
+git clone https://github.com/neovim/neovim.git && cd neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/usr/local/bin SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk MACOSX_DEPLOYMENT_TARGET=10.14
+make install
+cp build/bin/nvim /usr/local/bin/nvim
+cd ..
+rm -rf ~/neovim
 pip install --user neovim
 
 echo "-> Installing vim-plug"
