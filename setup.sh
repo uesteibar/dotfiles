@@ -8,13 +8,6 @@ mkdir ~/.config/nvim
 ln -s ~/dotfiles/vim/init.vim ~/.config/nvim/init.vim
 ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
-echo "-> Installing vim-plug"
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-echo "-> Installing Plugins"
-vim +PluginInstall +qall
-
 echo "-> Linking zsh config files"
 ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
 cp ~/dotfiles/zsh/environment.sample ~/dotfiles/zsh/environment
@@ -84,6 +77,13 @@ asdf global python pypy3.6-7.0.0
 
 echo "-> Setting up neovim"
 pip install --user neovim
+
+echo "-> Installing vim-plug"
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+echo "-> Installing Plugins"
+nvim +PlugInstall +qall
 
 echo "-> installing language servers"
 ln -s ~/dotfiles/vim/coc-settings.json ~/.config/nvim/coc-settings.json
