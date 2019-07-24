@@ -5,7 +5,7 @@
 Clone into your home directory
 
 ```
-git clone https://github.com/uesteibar/dotfiles.git ~/
+git clone https://github.com/uesteibar/dotfiles.git ~/dotfiles
 
 cd ~/dotfiles
 ```
