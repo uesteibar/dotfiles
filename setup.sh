@@ -8,13 +8,16 @@ mkdir ~/.config/nvim
 ln -s ~/dotfiles/vim/init.vim ~/.config/nvim/init.vim
 ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
+echo "-> Updating xcode command line tools"
+xcode-select --install
+
 echo "-> Linking zsh config files"
 ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
 cp ~/dotfiles/zsh/environment.sample ~/dotfiles/zsh/environment
 cp ~/dotfiles/zsh/user.sample ~/dotfiles/zsh/user
 cp ~/dotfiles/zsh/ssh.sample ~/dotfiles/zsh/ssh
 
-echo "-> configuring git"
+echo "-> Configuring git"
 ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/git/gitignore ~/.gitignore
 git config --global core.excludesfile '~/dotfiles/zsh/gitignore'
@@ -28,9 +31,6 @@ brew bundle
 echo "-> Configuring fzf"
 $(brew --prefix)/opt/fzf/install
 
-echo "-> Installing spaceshipt prompt"
-npm install -g spaceship-prompt
-
 echo "-> Installing asdf"
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 cd ~/.asdf
@@ -39,43 +39,55 @@ cd -
 
 source ~/.zshrc
 
-echo "-> installing java"
+echo "-> Installing java"
 asdf plugin-add java
 asdf install java openjdk-11.0.1
 asdf global java openjdk-11.0.1
 
-echo "-> installing ruby"
+echo "-> Installing ruby"
 asdf plugin-add ruby
-asdf install ruby 2.6
-asdf global ruby 2.6
+asdf install ruby 2.6.2
+asdf global ruby 2.6.2
 
-echo "-> installing erlang"
+echo "-> Installing erlang"
 asdf plugin-add erlang
 asdf install erlang 21.1
 asdf global erlang 21.1
 
-echo "-> installing elixir"
+echo "-> Installing elixir"
 asdf plugin-add elixir
 asdf install elixir 1.8
 asdf global elixir 1.8
 
-echo "-> installing node.js"
+echo "-> Installing node.js"
 asdf plugin-add nodejs
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf install nodejs 11.8.0
 asdf global nodejs 11.8.0
 
-echo "-> installing golang"
+echo "-> Installing golang"
 asdf plugin-add golang
 asdf install golang 1.11
 asdf global golang 1.11
+mkdir $HOME/code
+mkdir $HOME/code/go
+export GOPATH=$HOME/code/go
+export PATH="$GOPATH"/bin:"$PATH"
+export GO111MODULE=on
 
-echo "-> installing python"
+echo "-> Installing python"
 asdf plugin-add python
 asdf install python pypy3.6-7.0.0
 asdf global python pypy3.6-7.0.0
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+rm ./get-pyp.py
 
-echo "-> Setting up neovim"
+echo "-> Installing spaceshipt prompt"
+npm install -g spaceship-prompt
+
+echo "-> Installing neovim from source"
+brew install ninja libtool automake cmake pkg-config gettext
 git clone https://github.com/neovim/neovim.git && cd neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/usr/local/bin SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk MACOSX_DEPLOYMENT_TARGET=10.14
 make install
@@ -91,9 +103,10 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 echo "-> Installing Plugins"
 nvim +PlugInstall +qall
 
-echo "-> installing language servers"
+echo "-> Installing coc.nvim and language servers"
 ln -s ~/dotfiles/vim/coc-settings.json ~/.config/nvim/coc-settings.json
 
+echo "\t-> Installing elixir-ls"
 mkdir ~/dotfiles/vim/ls
 curl -s https://api.github.com/repos/JakeBecker/elixir-ls/releases/latest \
   | grep "elixir-ls.zip" \
@@ -104,8 +117,10 @@ unzip elixir-ls.zip -d ~/dotfiles/vim/ls/elixir-ls
 chmod 755 ~/dotfiles/vim/ls/elixir-ls/language_server.sh
 rm elixir-ls.zip
 
+echo "\t-> Installing gopls"
 go get -u golang.org/x/tools/cmd/gopls
 
+echo "\t-> Installing solargraph"
 gem install solargraph
 
 echo "-> Installing diff2html"
@@ -116,7 +131,7 @@ mkdir -p ~/bin
 curl -o ~/bin/tldr https://raw.githubusercontent.com/raylee/tldr/master/tldr
 chmod +x ~/bin/tldr
 
-echo "-> installing gpg"
+echo "-> Installing gpg"
 brew install gpg
 
 echo "Get your gpg private and public keys back and run"
