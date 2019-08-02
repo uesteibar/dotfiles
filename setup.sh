@@ -77,8 +77,9 @@ export GO111MODULE=on
 
 echo "-> Installing python"
 asdf plugin-add python
-asdf install python pypy3.6-7.0.0
-asdf global python pypy3.6-7.0.0
+asdf install python 3.7.4
+asdf install python 2.7.16
+asdf global python 3.7.4 2.7.16
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 rm ./get-pyp.py
