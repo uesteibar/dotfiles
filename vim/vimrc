@@ -65,7 +65,7 @@ Plug 'vim-scripts/copypath.vim'
 " Navigation
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'yggdroot/leaderf', { 'do': './install.sh' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'mhinz/vim-grepper'
 Plug 'brooth/far.vim'
 Plug 'terryma/vim-multiple-cursors'
@@ -134,7 +134,7 @@ set expandtab
 set smartindent
 set autoindent
 set mouse=v
-set clipboard=unnamed
+let g:loaded_clipboard_provider = 1
 
 if (has("termguicolors"))
   set termguicolors
@@ -163,7 +163,9 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 nnoremap <C-n> :NERDTreeToggle<CR>
 set hlsearch
 
-map <C-p> :LeaderfFile<CR>
+nnoremap <silent> <C-p> :FZF<cr>
+
+let $FZF_DEFAULT_COMMAND = 'fd --type f'
 
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1

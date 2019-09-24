@@ -21,7 +21,7 @@
 * [vim-scripts/copypath.vim](https://github.com/vim-scripts/copypath.vim)
 * [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
 * [Xuyuanp/nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
-* [yggdroot/leaderf](https://github.com/yggdroot/leaderf.vim)
+* [junegunn/fzf](https://github.com/junegunn/fzf)
 * [mhinz/vim-grepper](https://github.com/mhinz/vim-grepper)
 * [tpope/vim-rails](https://github.com/tpope/vim-rails)
 * [brooth/far.vim](https://github.com/brooth/far.vim)
