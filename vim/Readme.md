@@ -5,6 +5,7 @@
 ### Included plugins
 
 * [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
+* [tpope/vim-rhubarb](https://github.com/tpope/vim-rhubarb)
 * [vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)
 * [rakr/vim-one](https://github.com/rakr/vim-one)
 * [scrooloose/syntastic](https://github.com/scrooloose/syntastic)
