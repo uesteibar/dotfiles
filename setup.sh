@@ -107,17 +107,6 @@ nvim +PlugInstall +qall
 echo "-> Installing coc.nvim and language servers"
 ln -s ~/dotfiles/vim/coc-settings.json ~/.config/nvim/coc-settings.json
 
-echo "\t-> Installing elixir-ls"
-mkdir ~/dotfiles/vim/ls
-curl -s https://api.github.com/repos/JakeBecker/elixir-ls/releases/latest \
-  | grep "elixir-ls.zip" \
-  | cut -d : -f 2,3 \
-  | tr -d \" \
-  | wget -qi -
-unzip elixir-ls.zip -d ~/dotfiles/vim/ls/elixir-ls
-chmod 755 ~/dotfiles/vim/ls/elixir-ls/language_server.sh
-rm elixir-ls.zip
-
 echo "\t-> Installing gopls"
 go get -u golang.org/x/tools/cmd/gopls
 

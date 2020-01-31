@@ -38,6 +38,7 @@ Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-solargraph', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-vetur', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-elixir', {'do': 'yarn install --frozen-lockfile'}
 
 " suppress the annoying 'match x of y', 'The only match' and 'Pattern not
 " found' messages
