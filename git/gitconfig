@@ -10,7 +10,7 @@
 	default = matching
 	followTags = true
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = delta --dark --plus-color="#012800" --minus-color="#340001" --theme="DarkNeon"
 	excludesfile = ~/dotfiles/zsh/gitignore
 [gpg]
 	program = gpg
