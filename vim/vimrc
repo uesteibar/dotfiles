@@ -89,6 +89,7 @@ Plug 'findango/vim-mdx'
 Plug 'derekwyatt/vim-scala'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'towolf/vim-helm'
+Plug 'chr4/nginx.vim'
 
 " Formatters
 Plug 'mhinz/vim-mix-format'
