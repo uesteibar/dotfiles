@@ -137,6 +137,7 @@ Plug 'derekwyatt/vim-scala'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'towolf/vim-helm'
 Plug 'chr4/nginx.vim'
+Plug 'jparise/vim-graphql'
 
 " Formatters
 Plug 'mhinz/vim-mix-format'
