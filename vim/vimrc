@@ -211,8 +211,8 @@ set shiftwidth=2
 set expandtab
 set smartindent
 set autoindent
-set mouse=v
-let g:loaded_clipboard_provider = 1
+set mouse=a
+set clipboard+=unnamedplus
 
 let g:fzf_command_prefix = 'Fzf'
 
