@@ -164,6 +164,7 @@ Plug 'peitalin/vim-jsx-typescript'
 Plug 'towolf/vim-helm'
 Plug 'chr4/nginx.vim'
 Plug 'jparise/vim-graphql'
+Plug 'uesteibar/vim-lainoa'
 
 " Formatters
 Plug 'mhinz/vim-mix-format'
