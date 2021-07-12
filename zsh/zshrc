@@ -16,3 +16,7 @@ export LESS="-XRFS"
 
 autoload -Uz compinit
 compinit
+
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
