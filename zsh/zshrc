@@ -1,22 +1,14 @@
 source ~/dotfiles/zsh/aliases
 source ~/dotfiles/zsh/path
-source ~/dotfiles/zsh/prompt
-source ~/dotfiles/zsh/environment
 source ~/dotfiles/zsh/user
 source ~/dotfiles/zsh/ssh
 source ~/dotfiles/zsh/fzf
 source ~/dotfiles/zsh/asdf
-
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/dotfiles/zsh/environment
+source ~/dotfiles/zsh/prompt
 
 export LESS="-XRFS"
 
 autoload -Uz compinit
 compinit
 
-# Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt spaceship
