@@ -297,3 +297,8 @@ let g:Lf_DefaultMode = 'NameOnly'
 " Panes
 set splitbelow
 set splitright
+
+" Folding
+
+set foldmethod=indent
+set nofoldenable

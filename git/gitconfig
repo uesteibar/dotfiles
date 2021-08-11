@@ -16,3 +16,7 @@
 	program = gpg
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = main
+[credential]
+	helper = osxkeychain
