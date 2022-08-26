@@ -1,8 +1,12 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 source ~/dotfiles/zsh/aliases
 source ~/dotfiles/zsh/path
 source ~/dotfiles/zsh/user
 source ~/dotfiles/zsh/ssh
-source ~/dotfiles/zsh/fzf
 source ~/dotfiles/zsh/asdf
 source ~/dotfiles/zsh/environment
 source ~/dotfiles/zsh/prompt
@@ -12,3 +16,13 @@ export LESS="-XRFS"
 autoload -Uz compinit
 compinit
 
+source ~/dotfiles/zsh/fzf
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+enable-fzf-tab

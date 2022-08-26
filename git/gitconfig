@@ -1,7 +1,7 @@
 [user]
 	name = uesteibar
 	email = uesteibar@gmail.com
-	signingkey = 7259EF8533CB6FF0
+	signingkey = 33CB6FF0
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
@@ -10,7 +10,6 @@
 	default = matching
 	followTags = true
 [core]
-  pager = delta --dark --plus-color="#012800" --minus-color="#340001" --theme="DarkNeon"
 	excludesfile = ~/dotfiles/zsh/gitignore
 [gpg]
 	program = gpg

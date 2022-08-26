@@ -65,3 +65,10 @@ fbr() {
            fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
   git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
 }
+
+source ~/dotfiles/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
+
+# set list-colors to enable filename colorizing
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+
