@@ -5,6 +5,7 @@ PATH="$PATH":/usr/bin:/bin:/usr/sbin:/sbin
 PATH="$PATH":/opt/local/bin:/opt/local/sbin
 PATH="$PATH":/opt/homebrew/bin
 PATH=~/bin:"$PATH"
+PATH="$PATH":$HOME/.cargo/bin
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH
